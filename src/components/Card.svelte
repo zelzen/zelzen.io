@@ -1,15 +1,19 @@
-<div class="card">
+<div class="card" {style}>
   <slot></slot>
 </div>
 
 <style>
   .card {
-    height: 400px;
-    width: 200px;
-    border: 1px solid gray;
+    height: 380px;
+    width: 192px;
+    border: 1px solid #C4C4C4;
+    background-color: #C4C4C4;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
   }
 </style>
 
 <script>
-  export let name;
+  export let style = null;
 </script>
